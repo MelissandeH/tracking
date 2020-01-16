@@ -38,7 +38,7 @@ Fontawesome
 
 Il existe deux façons d'envoyer des fichiers via le module d'envoi de fichier
 
-A) Envoyer un seul fichier : 
+**A) Envoyer un seul fichier :**
 
 1. Cliquez sur "Définir une catégorie"
 2. Puis sur "Parcourir" à fin d'envoyer votre fichier
@@ -47,7 +47,7 @@ A) Envoyer un seul fichier :
 5. Pour finir, choisissez la catégorie associée à votre fichier
 6. Appuyez sur "Envoyer".
 
-B) Envoyer plusieurs fichiers à la fois :
+**B) Envoyer plusieurs fichiers à la fois :**
 
 {En cours de développement}
 
@@ -66,9 +66,8 @@ B) Envoyer plusieurs fichiers à la fois :
 
 ## Développement
 
-###### 186 à 238 : Multiple file upload (+btn file upload pour un fichier)
-{Développement en cours}
-Le bouton "Définir une catégorie" fait apparaître une fenêtre 'pop-up' permettant de personnaliser son envoi
+###### 186 à 238 : Multiple file upload (+btn file upload pour un fichier) {Développement en cours}
+[x] Le bouton "Définir une catégorie" fait apparaître une fenêtre 'pop-up' permettant de personnaliser son envoi
     
  ```php
  <div class="container nopadding mb-3" id="files">
@@ -127,8 +126,8 @@ Le bouton "Définir une catégorie" fait apparaître une fenêtre 'pop-up' perme
 ```
 
 ###### 240 à 317 : Table secondaire générée local** (uploads/docs)
-On génère une table grâce à une boucle répertoriant tous les fichiers se trouvant dans '/var/www/web/uploads/docs'
-Deux actions sont associées à ces fichiers : Visualiser et Enregistrer
+- [x] On génère une table grâce à une boucle répertoriant tous les fichiers se trouvant dans '/var/www/web/uploads/docs'
+- [x] Deux actions sont associées à ces fichiers : Visualiser et Enregistrer
     
 ```php
                 <div class="container mb-3 py-4 nopadding" id="infos">
@@ -211,10 +210,10 @@ Deux actions sont associées à ces fichiers : Visualiser et Enregistrer
 ```
 
 ###### 321 à 480 : Table principale générée BDD (devtracing)
-    1. On génère une table grâce à une boucle récupérant le filename, la catégorie, le commentaire qui correspondent à l'id de la session
-    2. Le type est créé grâce au filename qui est lui-même décomposé à fin de récuperer l'extension
-    3. Trois actions sont disponibles : visualiser et enregistrer mais également supprimer qui permet de retirer les données du document de la BDD {+ Développement en cours : suppresion du fichier en local}
-    4. Deux champs sont ainsi personnalisables : catégorie ainsi que commentaire. Le nom du fichier lui est modifiable seulement à sa création dans file upload
+- [x] On génère une table grâce à une boucle récupérant le filename, la catégorie, le commentaire qui correspondent à l'id de la session
+- [x] Le type est créé grâce au filename qui est lui-même décomposé à fin de récuperer l'extension
+- [x] Trois actions sont disponibles : visualiser et enregistrer mais également supprimer qui permet de retirer les données du document de la BDD {+ Développement en cours : suppresion du fichier en local}
+- [x] Deux champs sont ainsi personnalisables : catégorie ainsi que commentaire. Le nom du fichier lui est modifiable seulement à sa création dans file upload
     
 ```php
                 <div class="container mb-3 py-4 nopadding" id="infos">
@@ -380,10 +379,10 @@ Deux actions sont associées à ces fichiers : Visualiser et Enregistrer
 ```
 
 ###### 488 à 636 : Fenêtre pop-up (déclenchée par le btn "Définir une catégorie)
-    1. On upload un fichier que l'on peut tout de suite renommer et lui ajouter une description. 
-    2. Si le fichier est un fichier image lisible (PNG,JPG...) un preview apparaîtra entre le titre et la description du fichier envoyé
-    3. Il est nécessaire pour l'utilisateur de sélectionner une catégorie à associer à ce document
-    4. Les données du documents sont résumées dans le footer de la fenêtre à fin de faciliter la démarche
+- [x] On upload un fichier que l'on peut tout de suite renommer et lui ajouter une description. 
+- [x] Si le fichier est un fichier image lisible (PNG,JPG...) un preview apparaîtra entre le titre et la description du fichier envoyé
+- [x] Il est nécessaire pour l'utilisateur de sélectionner une catégorie à associer à ce document
+- [x] Les données du documents sont résumées dans le footer de la fenêtre à fin de faciliter la démarche
     
 ```php
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
